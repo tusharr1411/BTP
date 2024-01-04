@@ -4,6 +4,8 @@ import { ethers } from "ethers";
 import FileUpload from "./components/FileUpload";
 import Display from "./components/Display";
 import Modal from "./components/Modal";
+
+
 import "./App.css";
 
 function App() {
@@ -53,13 +55,13 @@ function App() {
       )}
       {modalOpen && (
         <Modal setModalOpen={setModalOpen} contract={contract}></Modal>
-      )}
+        )}
 
       <div className="App">
-        <h1 style={{ color: "white" }}> D-drive</h1>
+        <h1 style={{ color: "white",fontSize: "70px" , fontFamily: "Fantasy ,Roboto,sans-serif"}}> D-drive</h1>
         <div class="bg"></div>
-        <div class="bg bg2"></div>
-        <div class="bg bg3"></div>
+        {/* <div class="bg bg2"></div> */}
+        {/* <div class="bg bg3"></div> */}
 
         <p style={{ color: "white" }}>
           Account : {account ? account : "Not connected"}
